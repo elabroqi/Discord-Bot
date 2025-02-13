@@ -7,13 +7,10 @@ from responses import get_response
 import openai 
 
 openai.api_key = "your-openai-api-key"
-
-# Todo: load token from .env file
 load_dotenv()
 TOKEN: Final[str] = os.getenv('DISCORD_TOKEN')
 
 
-# Todo: Bot Setup
 # intents: permissions the bot needs to see and respond to messages
 intents: Intents = Intents.default() #intents of type intents
 # no quality assuarnce
