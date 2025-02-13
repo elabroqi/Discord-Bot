@@ -12,7 +12,7 @@ load_dotenv()
 TOKEN: Final[str] = os.getenv('DISCORD_TOKEN')
 
 if not TOKEN:
-    raise ValueError("⚠️ DISCORD_TOKEN is missing! Check your .env file or environment variables.")
+    raise ValueError("DISCORD_TOKEN is missing! Check your .env file or environment variables.")
 
 # intents: permissions the bot needs to see and respond to messages
 intents: Intents = Intents.default() #intents of type intents
